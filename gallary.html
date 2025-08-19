@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 2rem;
+        font-family: Arial, sans-serif;
+        color: lightgreen;
+      }
+      .container {
+        text-align: center;
+        margin: 20px;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+      .gallery img {
+        margin: 10px;
+        width: 200px;
+        height: auto;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      @media only screen and(min-width: 600px) and (max-width: 800px) {
+        .gallery img {
+          width: 100%;
+          margin: 5px 0;
+          padding: 2px;
+          border-radius: 5px;
+          display: block;
+        }
+        .gallery {
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        .container {
+          margin: 10px;
+          text-align: center;
+          font-size: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gallery</h1>
+      <p>
+        Welcome to the gallery page. Here you can find various images and
+        artworks.
+      </p>
+      <div class="gallery">
+        <img
+          src="./image/pexels-harald-pippert-1208626750-33225952.jpg"
+          alt="Image 2"
+        />
+        <img
+          src="./image/pexels-muzin-kahraman-789215623-33201555.jpg"
+          alt="Image 1"
+        />
+        <img src="./image/pexels-nati-87264186-33140592.jpg" alt="Image 3" />
+        <img
+          src="./image/pexels-nico-hartnauer-3133791-33350497.jpg"
+          alt="Image 4"
+        />
+        <img
+          src="./image/pexels-raymond-petrik-1448389535-31935726.jpg"
+          alt="Image 5"
+        />
+        <img
+          src="./image/pexels-harald-pippert-1208626750-33225952.jpg"
+          alt="Image 6"
+        />
+        <img
+          src="./image/pexels-muzin-kahraman-789215623-33201555.jpg"
+          alt="Image 7"
+        />
+        <img src="./image/pexels-nati-87264186-33140592.jpg" alt="img 8" />
+        <img src="./image/pexels-nico-hartnauer-3133791-33350497.jpg" alt="9" />
+        <img
+          src="./image/pexels-raymond-petrik-1448389535-31935726.jpg"
+          alt="10"
+        />
+      </div>
+    </div>
+  </body>
+</html>
